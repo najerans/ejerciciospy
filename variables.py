@@ -8,3 +8,9 @@ print(cantidadpersonas)
 
 mas = cantidadpersonas + 100
 print(mas)
+
+'''comentarios 
+multilinea'''
+
+
+#comentario linea sencilla 
