@@ -1,11 +1,12 @@
 class Participante:
-    def __init__(self, nombre):
-        self.nombre = nombre 
-        self.puntos = 0
-        self.seleccion = ""
+    def __init__(self, name):
+        self.name = name
+        self.points = 0
+        self.choice = ""
     def eleccion(self):
-        self.eleccion = input("{nombre}, selecciona, piedra, papel o tijera:".format(nombre= self.nombre))
-        print("{nombre} selecciona {seleccion}".format(nombre=self.nombre, seleccion = self.seleccion))
+        self.choice = input ("{name}, selecciona piedra, papel o tijera:" .format(name = self.name))
+        print("{name} selecciona {choice}".format(name=self.name, choice = self.choice))
+        
 class Ronda:
     def __init__(self, p1, p2):
         p1.eleccion()
@@ -27,7 +28,3 @@ class Game:
         print("implement")
 game = Game()
 game.start()
-
-
-
-
